@@ -6,12 +6,17 @@ import 'package:first_app/list_view.dart';
 import 'package:flutter/material.dart';
 
 
+import 'Drawer.dart';
 import 'Grid_View.dart';
 
+import 'Navigator_widget.dart';
 import 'Stack_widget.dart';
+import 'Widget/Own_Widget.dart';
 import 'home.dart';
 import 'flutter.dart';
 import 'alert.dart';
+
+
 
 class Myapp extends StatelessWidget {
   Myapp({super.key});
@@ -21,7 +26,17 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter App',
-      home:alert(),
+      initialRoute: '/NavigatorV',
+      routes: {
+        '/DrawerView': (context) => DrawerView(),
+        '/NavigatorV': (context) => NavigatorV(),
+        '/alert': (context) => alert(),
+      },
+
+
+
     );
   }
 }
+
+
