@@ -57,11 +57,15 @@ class Myapp extends StatelessWidget {
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(30),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(30),
-              borderSide: BorderSide(color: Colors.deepOrange, width: 2),
-            ),
           ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: Colors.pink,
+                width: 1,
+              ),
+            ),
+
+
           hintStyle: TextStyle(
             color: Colors.deepOrange,
             fontSize: 16,
